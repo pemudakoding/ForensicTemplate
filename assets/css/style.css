@@ -180,18 +180,6 @@ footer img:hover{
     color: var(--blue) !important;
 }
 @media (min-width: 768px) {
-    #company-overview{
-        background-image: url('/assets/images/pexels-olia-danilevich-4974914\ 1.png');
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size:50%;
-    }
-    
-    #v-mission{
-        background-image: url('/assets/images/pexels-cottonbro-4709285\ 1.png');
-        background-repeat: no-repeat;
-        background-size:50%;
-    }
 
     .hero-wrapper{
         
