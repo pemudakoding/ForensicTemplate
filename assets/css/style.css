@@ -124,6 +124,10 @@ i.checkfill{
     background-position: left top,bottom right;
 }
 
+.services{
+    margin-left: 1.8rem!important;
+}
+
 .exp-icon-project{
     background-image: url('/assets/images/icons/BriefcaseFill.png');
 }
