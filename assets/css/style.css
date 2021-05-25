@@ -5,11 +5,15 @@
 a{
     text-decoration: none;
 }
+li {
+    list-style: none;
+}
 
 :root{
     --blue: #002E5B;
     --yellow: #F3D94C;
     --white: #F4F4F4;
+    --dark-blue: #05294B;
 }
 
 .text-roboto{
@@ -48,6 +52,9 @@ a{
     background-color: var(--blue);
 }
 
+.bg-default-blue-dark{
+    background-color: var(--dark-blue);
+}
 
 .p-6{
     padding: 5rem !important;
