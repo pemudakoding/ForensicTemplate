@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+
+/* Rest */
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --blue: #002E5B;
+    --yellow: #F3D94C;
+    --white: #F4F4F4;
+}
+
+.text-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.font-weight-700{
+    font-weight: 700;
+}
+
+.font-weight-900{
+    font-weight: 900;
+}
+
+.text-default{
+    color: var(--blue) !important;
+}
+
+
+.feather.i-blue{
+    fill: var(--blue);
+    width: 22px;
+}
+.feather.i-stroke-white{
+    stroke: var(--white);
+}
+
+.bg-default{
+    background-color: var(--white);
+}
+
+.bg-default-blue{
+    background-color: var(--blue);
+}
+
+
+.p-6{
+    padding: 5rem !important;
+}
+.hero-wrapper{
+    background-image: url('/assets/images/circle.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+#headline > .text-roboto{
+    font-size: 3em;
+}
+hr.border-yellow{
+    width: 100px;
+    border: 5px solid var(--yellow);
+    opacity: 1;
+    border-radius: 20px;
+}
+
+#company-overview{
+    background-image: url('/assets/images/pexels-olia-danilevich-4974914\ 1.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:50%;
+}
+
+#v-mission{
+    background-image: url('/assets/images/pexels-cottonbro-4709285\ 1.png');
+    background-repeat: no-repeat;
+    background-size:50%;
+}
