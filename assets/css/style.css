@@ -88,6 +88,13 @@ hr.border-yellow{
     background-size:50%;
 }
 
+.our-value-wrapper{
+    background-image: url('/assets/images/circle.png'),url('/assets/images/circle1.png');
+    background-repeat: no-repeat;
+    background-position: right top,bottom left;
+    
+}
+
 .our-value-wrapper p{
     font-size: 0.9em
 }
