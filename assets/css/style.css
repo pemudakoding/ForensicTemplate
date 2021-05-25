@@ -74,6 +74,7 @@ li {
     background-image: url('/assets/images/circle.png');
     background-repeat: no-repeat;
     background-position: right top;
+    background-size: 50%;
 }
 
 #headline > .text-roboto{
@@ -86,18 +87,7 @@ hr.border-yellow{
     border-radius: 20px;
 }
 
-#company-overview{
-    background-image: url('/assets/images/pexels-olia-danilevich-4974914\ 1.png');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size:50%;
-}
 
-#v-mission{
-    background-image: url('/assets/images/pexels-cottonbro-4709285\ 1.png');
-    background-repeat: no-repeat;
-    background-size:50%;
-}
 
 .our-value-wrapper{
     background-image: url('/assets/images/circle.png'),url('/assets/images/circle1.png');
@@ -149,3 +139,35 @@ i.checkfill{
     width: 61px;
     height: 61px;
 }
+
+footer ul li > a:hover {
+    color: var(--yellow) !important;
+}
+
+
+@media (min-width: 768px) {
+    #company-overview{
+        background-image: url('/assets/images/pexels-olia-danilevich-4974914\ 1.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size:50%;
+    }
+    
+    #v-mission{
+        background-image: url('/assets/images/pexels-cottonbro-4709285\ 1.png');
+        background-repeat: no-repeat;
+        background-size:50%;
+    }
+
+    .hero-wrapper{
+        
+        background-size: 20%;
+    }
+}
+
+@media (min-width: 992px) { 
+    .hero-wrapper{
+        
+        background-size: unset;
+    }
+ }
