@@ -48,6 +48,17 @@ a{
 .p-6{
     padding: 5rem !important;
 }
+.py-6{
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+.h-100{
+    height: 100%;
+}
+
+.rounded-default{
+    border-radius: 20px;
+}
 .hero-wrapper{
     background-image: url('/assets/images/circle.png');
     background-repeat: no-repeat;
@@ -75,4 +86,8 @@ hr.border-yellow{
     background-image: url('/assets/images/pexels-cottonbro-4709285\ 1.png');
     background-repeat: no-repeat;
     background-size:50%;
+}
+
+.our-value-wrapper p{
+    font-size: 0.9em
 }
