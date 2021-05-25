@@ -70,6 +70,14 @@ li {
 .rounded-default{
     border-radius: 20px;
 }
+#socials img{
+    transition: 0.2s all ease-in;
+}
+#socials img:hover{
+    
+    transform: rotate(30deg);
+}
+
 .hero-wrapper{
     background-image: url('/assets/images/circle.png');
     background-repeat: no-repeat;
@@ -143,6 +151,15 @@ i.checkfill{
 footer ul li > a:hover {
     color: var(--yellow) !important;
 }
+
+footer img{
+    transition: 0.2s all ease-in;
+}
+footer img:hover{
+    
+    transform: rotate(30deg);
+}
+
 
 
 @media (min-width: 768px) {
