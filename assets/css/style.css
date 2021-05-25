@@ -27,6 +27,10 @@ a{
     color: var(--blue) !important;
 }
 
+.text-default-yellow{
+    color: var(--yellow) !important;
+}
+
 
 .feather.i-blue{
     fill: var(--blue);
@@ -97,4 +101,40 @@ hr.border-yellow{
 
 .our-value-wrapper p{
     font-size: 0.9em
+}
+
+i.checkfill{
+    background-image: url('/assets/images/icons/PatchCheckFill.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 38px;
+    height: 38px;
+}
+
+.our-service{
+    background-image: url('/assets/images/circle2.png'),url('/assets/images/circle3.png');
+    background-repeat: no-repeat;
+    background-position: left top,bottom right;
+}
+
+.exp-icon-project{
+    background-image: url('/assets/images/icons/BriefcaseFill.png');
+}
+
+.exp-icon-awards{
+    background-image: url('/assets/images/icons/StarFill.png');
+}
+
+.exp-icon-satisfied{
+    background-image: url('/assets/images/icons/HandThumbsUpFill.png');
+}
+
+.exp-icon-employees{
+    background-image: url('/assets/images/icons/PeopleFill.png');
+}
+.exp-icon{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 61px;
+    height: 61px;
 }
