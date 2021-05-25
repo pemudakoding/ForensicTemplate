@@ -161,7 +161,24 @@ footer img:hover{
 }
 
 
+.goog-te-gadget-simple{
+    border-left:0 !important;
+    border-right: 0 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    border: 2px solid var(--blue) !important;
+    border-radius: 50px !important;
+    background-color: transparent !important;
+    padding:5px !important;
+}
 
+.goog-te-gadget-icon{
+    display: none !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value{
+    color: var(--blue) !important;
+}
 @media (min-width: 768px) {
     #company-overview{
         background-image: url('/assets/images/pexels-olia-danilevich-4974914\ 1.png');
