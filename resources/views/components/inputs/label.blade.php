@@ -1,4 +1,4 @@
-@props(['value','inline'])
+@props(['value','inline' => false])
 
 @if (!$inline)
 <div class="d-block">

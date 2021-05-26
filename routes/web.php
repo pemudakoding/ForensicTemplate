@@ -27,7 +27,7 @@ Route::middleware(['auth'])->prefix('/administrator')
         ->name('dashboard');
 
     Route::resource('/vision-mission', VissionMissionController::class)
-        ->only('index','edit');
+        ->only('index','edit','update');
 
 });
 

@@ -7,26 +7,36 @@
                         <h4>Edit Form</h4>
                     </div>
                     <div class="card-body">
-                        <div class="form-group row mb-4">
-                            <x-inputs.label class="col-form-label text-md-right col-12 col-md-3 col-lg-3" value="Title" inline="true"/>
-                            <div class="col-sm-12 col-md-7">
-                                <x-inputs.input type="text" name="title" :value="$data->title" />
+                        <form action="{{ route('administrator.vision-mission.update',$data->id) }}" method="post">
+                            @csrf
+                            @method('PUT')
+                            <div class="form-group row mb-4">
+                                <x-inputs.label class="col-form-label text-md-right col-12 col-md-3 col-lg-3" value="Title" inline="true"/>
+                                <div class="col-sm-12 col-md-7">
+                                    <x-inputs.input type="text" name="title" :value="old('title') ?? $data->title" />
+                                    @error('title')
+                                        <x-alerts.alert-simple type='danger' :msg=$message/>
+                                    @enderror
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row mb-4">
-                            <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Content</label>
-                            <div class="col-sm-12 col-md-7">
-                                <textarea id="content" name="content">
-                                    {{ $data->content }}
-                                </textarea>
+                            <div class="form-group row mb-4">
+                                <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Content</label>
+                                <div class="col-sm-12 col-md-7">
+                                    <textarea id="content" name="content">
+                                        {{ old('content') ?? $data->content }}
+                                    </textarea>
+                                    @error('content')
+                                        <x-alerts.alert-simple type='danger' :msg=$message/>
+                                    @enderror
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row mb-4">
-                            <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
-                            <div class="col-sm-12 col-md-7">
-                                <button class="btn btn-primary">Publish</button>
+                            <div class="form-group row mb-4">
+                                <x-inputs.label class="col-form-label text-md-right col-12 col-md-3 col-lg-3" value="" inline="true"/>
+                                <div class="col-sm-12 col-md-7">
+                                    <x-inputs.button class="btn-primary" value='Publish'/>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

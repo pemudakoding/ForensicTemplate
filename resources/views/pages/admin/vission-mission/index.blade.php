@@ -8,6 +8,7 @@
                     <div class="card-header">
                         <h4>@yield('title') List</h4>
                     </div>
+                    <x-alerts.table-alert/>
                     <div class="card-body p-0">
                         <div class="table-responsive">
                             <table class="table table-striped table-md">
@@ -24,7 +25,7 @@
                                         <td>{{ $vm->title }}</td>
                                         <td>{{ Str::substr($vm->content, 0, 50) }}....</td>
                                         <td>
-                                            <a href="{{ route('administrator.vision-mission.edit',$vm->id) }}" class="btn btn-primary">Ubah</a>
+                                            <a href="{{ route('administrator.vision-mission.edit',$vm->id) }}" class="btn btn-primary">Edit</a>
                                         </td>
                                     </tr>
                                     @endforeach
