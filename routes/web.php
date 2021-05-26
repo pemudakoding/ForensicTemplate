@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PersonalController;
 use App\Http\Controllers\Admin\{
     DashboardController, OurExperienceController, VissionMissionController,
-    OurValueController
+    OurValueController,
+    SiteInformationController
 };
 
 /*
@@ -38,6 +39,14 @@ Route::middleware(['auth'])->prefix('/administrator')
             Route::get('',[OurExperienceController::class,'edit'])
                 ->name('edit');
             Route::put('update',[OurExperienceController::class,'update'])
+                ->name('update');
+        });
+    Route::name('site-information.')
+        ->prefix('site-information')
+        ->group(function(){
+            Route::get('',[SiteInformationController::class,'edit'])
+                ->name('edit');
+            Route::put('update',[SiteInformationController::class,'update'])
                 ->name('update');
         });
 

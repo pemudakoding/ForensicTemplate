@@ -1,5 +1,5 @@
 @props(['type','msg'])
 
 
-<p class="text-{{$type}}">{{ $msg }}</p>
+<span class="text-{{$type}}">{{ $msg }}</span>
 
