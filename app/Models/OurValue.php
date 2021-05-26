@@ -9,5 +9,5 @@ class OurValue extends Model
 {
     use HasFactory;
 
-
+    protected $guarded = [];
 }

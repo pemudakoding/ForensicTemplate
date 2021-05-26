@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PersonalController;
 use App\Http\Controllers\Admin\{
-    DashboardController,VissionMissionController
+    DashboardController,VissionMissionController,
+    OurValueController
 };
 
 /*
@@ -27,6 +28,8 @@ Route::middleware(['auth'])->prefix('/administrator')
         ->name('dashboard');
 
     Route::resource('/vision-mission', VissionMissionController::class)
+        ->only('index','edit','update');
+    Route::resource('/our-value', OurValueController::class)
         ->only('index','edit','update');
 
 });

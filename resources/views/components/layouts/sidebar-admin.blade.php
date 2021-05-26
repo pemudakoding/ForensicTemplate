@@ -9,6 +9,7 @@
         <ul class="sidebar-menu">
             <li><a class="nav-link" href="{{ route('administrator.dashboard') }}"><i class="fas fa-fire"></i> <span>Dashboard</span></a></li>
             <li><a class="nav-link" href="{{ route('administrator.vision-mission.index') }}"><i class="fas fa-dot-circle"></i> <span>Vision Mission</span></a></li>
+            <li><a class="nav-link" href="{{ route('administrator.our-value.index') }}"><i class="fas fa-atom"></i> <span>Company Values</span></a></li>
         </ul>
 
     </aside>
