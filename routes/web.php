@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PersonalController;
 use App\Http\Controllers\Admin\{
-    DashboardController,VissionMissionController,
+    DashboardController, OurExperienceController, VissionMissionController,
     OurValueController
 };
 
@@ -31,6 +31,15 @@ Route::middleware(['auth'])->prefix('/administrator')
         ->only('index','edit','update');
     Route::resource('/our-value', OurValueController::class)
         ->only('index','edit','update');
+
+    Route::name('our-experience.')
+        ->prefix('our-experience')
+        ->group(function(){
+            Route::get('',[OurExperienceController::class,'edit'])
+                ->name('edit');
+            Route::put('update',[OurExperienceController::class,'update'])
+                ->name('update');
+        });
 
 });
 
