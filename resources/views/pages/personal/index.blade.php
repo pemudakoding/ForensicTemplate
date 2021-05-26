@@ -116,7 +116,7 @@
                     @endif
                     >
                     <div class="card-body py-5">
-                        <img src="{{ asset('storage/'.$ourValue->icon) }}" alt="{{ $ourValue->title }} Icon" class="mb-4">
+                        <img src="{{ asset('storage/'.$ourValue->icon) }}" alt="{{ $ourValue->title }} Icon" class="mb-4" width="88px">
                         <h5 class="card-title text-roboto text-default">{{ $ourValue->title }}</h5>
                         <p class="card-text text-preline">
                             {{ $ourValue->content }}
